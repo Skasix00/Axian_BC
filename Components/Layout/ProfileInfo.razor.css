@@ -1,0 +1,27 @@
+﻿.profile-info .profile-image img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.profile-info .profile-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-info .profile-details {
+    font-size: 12px;
+    font-family: "Lato";
+    font-weight: 400;
+    color: #fff;
+    line-height: 14.4px;
+}
+
+.person-name {
+    font-size: 14px;
+    font-family: "Lato";
+    font-weight: 400;
+    color: #fff;
+    line-height: 16.8px;
+}

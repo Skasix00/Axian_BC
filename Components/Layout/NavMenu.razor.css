@@ -1,0 +1,35 @@
+.navbar {
+    background-color: #4841B3 !important;
+    height: 58px;
+    padding: 10px 20px 10px 20px;
+}
+
+.nav-link > span {
+    color: #ffff !important;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+}
+
+.nav-item {
+    color: #ffff !important;
+}
+
+.active {
+    color: red !important;
+}
+
+.navbar-nav img {
+    vertical-align: middle;
+}
+.navbar-collapse.collapse.show {
+    background-color: #4841B3; 
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse.collapse.show {
+        padding: 25px;
+        z-index: 1050;
+    }
+}

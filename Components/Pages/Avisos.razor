@@ -1,0 +1,27 @@
+﻿@page "/"
+@* @inherits LayoutComponentBase *@
+
+<PageTitle>Avisos</PageTitle>
+
+<section>
+    <div class="row mt-4">
+        <!--Ribbon above the main content of the page-->
+        <div class="col-md-12 bottom-line d-flex align-items-center ps-4">
+
+            <Axian_BC.Components.Layout.BackButton></Axian_BC.Components.Layout.BackButton>
+            <Axian_BC.Components.Layout.HeaderRibbon ></Axian_BC.Components.Layout.HeaderRibbon>
+
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <!--Side Bar-->
+        <div class="col-lg-4">
+            <Axian_BC.Components.Layout.SideMenu></Axian_BC.Components.Layout.SideMenu>
+        </div>
+        <!--Main Content-->
+        <div class="col-lg-8">
+            <Axian_BC.Components.Layout.LeftContent></Axian_BC.Components.Layout.LeftContent>
+        </div>
+    </div>
+</section>

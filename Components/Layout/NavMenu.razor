@@ -1,0 +1,64 @@
+﻿@using Axian_BC.Components;
+@inject IJSRuntime JS;
+
+<div class="col-lg-12">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href=""><img src="Images/Logo.png" alt="logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!--Links-->
+                    <li class="nav-item">
+                        <NavLink class="nav-link" aria-current="page" href="#" Match="NavLinkMatch.All">
+                            <span>Home</span>
+                        </NavLink>
+
+                    </li>
+                    <li class="nav-item ">
+                        <NavLink class="nav-link" aria-current="page" href="" Match="NavLinkMatch.All">
+                            <span>Avisos</span>
+                        </NavLink>
+
+                    </li>
+                    <li class="nav-item">
+                        <NavLink class="nav-link" aria-current="page" href="#" Match="NavLinkMatch.All">
+                            <span>Entidades</span>
+                        </NavLink>
+
+                    </li>
+                    <li class="nav-item">
+                        <NavLink class="nav-link" aria-current="page" href="#" Match="NavLinkMatch.All">
+                            <span>Candidaturas</span>
+                        </NavLink>
+
+                    </li>
+                    <li class="nav-item">
+                        <NavLink class="nav-link" aria-current="page" href="#" Match="NavLinkMatch.All">
+                            <span>Operações</span>
+                        </NavLink>
+
+                    </li>
+                </ul>
+                <ul class="navbar-nav actions ms-auto align-items-center">
+                    <!--Actions-->
+                    <li class="nav-item">
+                        <img class="image-fluid me-3" src="Images/Search-Header.png" alt="search" />
+                    </li>
+                    <li class="nav-item">
+                        <img class="img-fluid me-3" src="Images/Inbox.png" alt="inbox" />
+                    </li>
+                    <li class="nav-item">
+                        <img class="img-fluid me-3" src="Images/Settings.png" alt="settings" />
+                    </li>
+                    <!--Profile Info-->
+                    <li class="nav-item profile-info d-flex align-items-center">
+                        <ProfileInfo></ProfileInfo>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

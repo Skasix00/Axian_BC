@@ -1,0 +1,261 @@
+﻿@inject IJSRuntime JSRuntime
+@rendermode InteractiveServer
+
+<section class="mt-4 pt-1">
+    <div class="d-flex align-items-center justify-content-between">
+        <!-- Top Left Section -->
+        <div class="me-4">
+            <p class=" mb-1 section-title">Opção 10</p>
+            <p class="section-notes mb-0 mt-3">* Campos de preenchimento obrigatório</p>
+        </div>
+
+        <!-- Top Right Section -->
+        <div class="d-flex gap-1">
+            <button type="button" class="btn d-flex align-items-center">
+                <img src="images/left-arrow.png" alt="salvar" class="me-2" />
+                <span class="list-navigation">ANTERIOR</span>
+            </button>
+            <button type="button" class="btn d-flex align-items-center">
+                <span class="list-navigation">SEGUINTE</span>
+                <img src="images/right-arrow.png" alt="salvar" class="ms-2" />
+            </button>
+        </div>
+    </div>
+</section>
+
+<!--First Table-->
+<div class="white-bg mt-3">
+    <section>
+        <div class="col-lg-12 p-4">
+            <div class="row">
+                <p class="table-title">Tipo de Taxa</p>
+            </div>
+            <label class=" input-label" for="taxaInput">Adicionar tipo de taxa</label>
+            <br />
+            <select class="input-tax mt-2 form-select" id="taxaInput">
+                <option>Selecionar</option>
+            </select>
+        </div>
+
+    </section>
+</div>
+
+<!--Second Table-->
+<div class="white-bg  mt-3">
+    <section>
+        <div class="col-lg-12 p-4 gap-2">
+            <div class="row">
+                <p class="table-title">Contar * </p>
+            </div>
+            <div class="radio-group">
+                <input class="radio-violet" type="radio" title="Sim" name="contar" id="sim" />
+                <label for="sim">Sim</label>
+            </div>
+            <div class="radio-group">
+                <input class="radio-violet" type="radio" title="Não" name="contar" id="nao" />
+                <label for="nao">Não</label>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+<!--Third Table-->
+<div class="white-bg mt-3">
+    <section>
+        <div class="p-4">
+            <!-- Top Left Section -->
+            <div class="row">
+                <p class="table-title">Taxa * </p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-4">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-inline-block me-2">Adicionar taxa por localização</div>
+                        <div class="form-check form-switch d-inline-block">
+                            <input type="checkbox" class="form-check-input" id="site_state" />
+                            <label for="site_state" class="form-check-label"></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Top Right Section -->
+                <div class="d-flex gap-1">
+                    <button class="btn btn-custom-violet">+ ADICIONAR TAXA</button>
+                </div>
+            </div>
+            <table class="table table-borderless councilTable">
+                <thead>
+                    <tr>
+                        <th>
+                            <!-- Master checkbox for selecting all -->
+                            <input class="custom-checkbox" type="checkbox" id="checkbox" @bind="SelectAll" @onclick="ToggleSelectAll" />
+                        </th>
+                        <th class="table-header-text">NUTS II</th>
+                        <th class="table-header-text">NUTS III</th>
+                        <th class="table-header-text">Concelho</th>
+                        <th class="table-header-text">Taxa (%)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (CouncilList != null)
+                    {
+                        @foreach (var line in CouncilList)
+                        {
+                            <tr class="table-line">
+                                <td>
+                                    <input type="checkbox"
+                                           class="custom-checkbox"
+                                           @bind="line.IsSelected"
+                                           @onclick="() => { UpdateSelectedCouncil(line); }" />
+                                </td>
+                                <td class="table-text">@line.NutsII</td>
+                                <td class="table-text">@line.NutsIII</td>
+                                <td class="table-text">@line.Concelho</td>
+                                <td class="table-text">@line.Taxa</td>
+                                <td><img src="Images/trash-ativo.png" alt="trash" height="32" width="32" @onclick="() => DeleteCouncil(line.Id)" /></td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr><td> <p>Sem concelhos para mostrar...</p></td></tr>
+                    }
+                </tbody>
+            </table>
+            <!-- Pagination Section -->
+            <div class="mt-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="pagination-info d-flex align-items-center">
+                        <span>1 de 23 páginas</span>
+                        <span class="ms-2">(23 itens)</span>
+                    </div>
+                    <div class="items-per-page d-flex align-items-center">
+                        <span class="me-2">Itens por página</span>
+                        <select>
+                            <option>10</option>
+                            <option>20</option>
+                            <option>30</option>
+                        </select>
+                    </div>
+                    <div class="pagination-items">
+                        <span class="arrow" style="color: #6057EE; font-weight: bold; font-size: 1.5rem;">&lt;&lt;</span>
+                        <span class="arrow" style="color: #6057EE; font-weight: bold; font-size: 1.5rem;">&lt;</span>
+                        <button class="selected-page" style="background-color: #F0EFFE; color: #6057EE; border-radius: 50%; padding: 0.5rem 1rem; border: none;">1</button>
+                        <button>2</button>
+                        <span class="arrow" style="color: #6057EE; font-weight: bold; font-size: 1.5rem;">&gt;</span>
+                        <span class="arrow" style="color: #6057EE; font-weight: bold; font-size: 1.5rem;">&gt;&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Full-Width Banner Showing the Number of Selected Rows -->
+@if (SelectedCouncilsCount > 0)
+{
+    <div class="selected-banner fixed-bottom d-flex justify-content-between align-items-center">
+        <div class="selected-text ms-3">
+            <span>@SelectedCouncilsCount taxa(s) selecionadas.</span>
+        </div>
+        <div class="d-flex gap-2 me-3">
+            <button class="btn btn-custom-violet" @onclick="CancelSelection">CANCELAR</button>
+            <button class="btn btn-custom-violet-inverted" @onclick="DeleteSelection">ELIMINAR</button>
+        </div>
+    </div>
+}
+
+@code {
+
+    public class Council
+    {
+        public int Id { get; set; }
+        public string NutsII { get; set; } = string.Empty;
+        public string NutsIII { get; set; } = string.Empty;
+        public string Concelho { get; set; } = string.Empty;
+        public string Taxa { get; set; } = string.Empty;
+        public bool IsSelected { get; set; } = false;
+    }
+
+    [Parameter]
+    public List<Council> CouncilList { get; set; } = new List<Council>() {
+        new Council(){ Id = 1, NutsII="Norte", NutsIII="Ave", Concelho="Fafe", Taxa="25%" },
+        new Council(){ Id = 2, NutsII="Norte", NutsIII="Área Metropolitana do Porto", Concelho="Matosinhos", Taxa="75%" },
+    };
+
+    private List<Council> SelectedCouncil { get; set; } = new List<Council>();
+
+    // Calculate the count of selected lines
+    private int SelectedCouncilsCount => CouncilList.Count(council => council.IsSelected);
+
+    // Property to track if all checkboxes are selected
+    private bool SelectAll
+    {
+        get => CouncilList.All(council => council.IsSelected);
+        set
+        {
+            foreach (var council in CouncilList)
+            {
+                council.IsSelected = value;
+            }
+        }
+    }
+
+    // Toggle select all or deselect all
+    private void ToggleSelectAll()
+    {
+        SelectAll = !SelectAll;
+    }
+
+    private void UpdateSelectedCouncil(Council council)
+    {
+        if (council.IsSelected)
+        {
+            if (!SelectedCouncil.Contains(council))
+            {
+                SelectedCouncil.Add(council);  // Add to selected list
+            }
+        }
+        else
+        {
+            SelectedCouncil.Remove(council);  // Remove from selected list if unchecked
+        }
+    }
+
+    // Method to reset selections when "CANCELAR" is clicked
+    private void CancelSelection()
+    {
+        foreach (var council in CouncilList)
+        {
+            council.IsSelected = false;  // Deselect all councils
+        }
+
+
+        SelectedCouncil.Clear();
+
+        StateHasChanged();  // Update the UI to hide the banner
+    }
+
+    // Method to delete selections when "ELIMINAR" is clicked
+    private void DeleteSelection()
+    {
+        // Logic to delete selected councils
+        CouncilList.RemoveAll(council => council.IsSelected);
+
+        SelectedCouncil.Clear();
+
+        StateHasChanged();  // Update the UI to hide the banner
+    }
+    private void DeleteCouncil(int councilId)
+    {
+        // Remove o council da lista pelo Id
+        var councilToRemove = CouncilList.FirstOrDefault(council => council.Id == councilId);
+        if (councilToRemove != null)
+        {
+            CouncilList.Remove(councilToRemove);
+        }
+
+        StateHasChanged();  // Atualiza a UI
+    }
+}

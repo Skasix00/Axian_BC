@@ -1,0 +1,18 @@
+﻿@inherits LayoutComponentBase
+
+<div class="row">
+    <!--Navigation-->
+    <NavMenu />
+</div>
+
+<div class="page p-3 ms-4 me-4">
+    <!--Page Content-->
+        @Body
+</div>
+
+<!--In case of Error-->
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+</div>

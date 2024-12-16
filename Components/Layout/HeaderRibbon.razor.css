@@ -1,0 +1,27 @@
+﻿.page-title {
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14.4px
+}
+
+.new-title {
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33.6px
+}
+
+.fancy-state {
+    color: #6057EE;
+    font-family: "Lato";
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 19px;
+    letter-spacing: 1.7px;
+}
+
+
+.inline-bl {
+    display: inline-block;
+}
