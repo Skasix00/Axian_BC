@@ -12,17 +12,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jdnxckbadk"},{"Name":"integrity","Value":"sha256-l4AxwDQPURckHbzo9ze3C15Vmf2gFk40xWE9u6XKuXY="},{"Name":"label","Value":"_content/Axian_BC/app.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"513"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022l4AxwDQPURckHbzo9ze3C15Vmf2gFk40xWE9u6XKuXY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 16 Dec 2024 17:04:00 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Axian_BC/Axian_BC.638s9hmyvg.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Axian_BC.638s9hmyvg.bundle.scp.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"638s9hmyvg"},{"Name":"integrity","Value":"sha256-8oS\u002BXJfuXpcDWZjzuX2/bV6nY7gk2rbRD9SctiWUzV8="},{"Name":"label","Value":"_content/Axian_BC/Axian_BC.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10920"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228oS\u002BXJfuXpcDWZjzuX2/bV6nY7gk2rbRD9SctiWUzV8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 16 Dec 2024 19:01:22 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Axian_BC/Axian_BC.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Axian_BC.638s9hmyvg.bundle.scp.css'))</AssetFile>
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Axian_BC.w4ort33fcs.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8oS\u002BXJfuXpcDWZjzuX2/bV6nY7gk2rbRD9SctiWUzV8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"10920"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228oS\u002BXJfuXpcDWZjzuX2/bV6nY7gk2rbRD9SctiWUzV8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 16 Dec 2024 19:01:22 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Mt5OcwEdblrVVV40393WO9/95i1IeiZJH7PfvYJgF0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"11024"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228Mt5OcwEdblrVVV40393WO9/95i1IeiZJH7PfvYJgF0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 16 Dec 2024 19:26:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Axian_BC/Axian_BC.w4ort33fcs.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Axian_BC.w4ort33fcs.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"w4ort33fcs"},{"Name":"integrity","Value":"sha256-8Mt5OcwEdblrVVV40393WO9/95i1IeiZJH7PfvYJgF0="},{"Name":"label","Value":"_content/Axian_BC/Axian_BC.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11024"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228Mt5OcwEdblrVVV40393WO9/95i1IeiZJH7PfvYJgF0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 16 Dec 2024 19:26:49 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Axian_BC/bootstrap/bootstrap.min.bpk8xqwxhs.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\bootstrap\bootstrap.min.css'))</AssetFile>

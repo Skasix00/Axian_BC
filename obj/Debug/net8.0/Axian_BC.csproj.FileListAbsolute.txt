@@ -25,7 +25,6 @@ E:\Axian\Axian_BC\obj\Debug\net8.0\staticwebassets\msbuild.build.Axian_BC.props
 E:\Axian\Axian_BC\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Axian_BC.props
 E:\Axian\Axian_BC\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Axian_BC.props
 E:\Axian\Axian_BC\obj\Debug\net8.0\staticwebassets.pack.json
-E:\Axian\Axian_BC\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 E:\Axian\Axian_BC\obj\Debug\net8.0\Axian_BC.dll
 E:\Axian\Axian_BC\obj\Debug\net8.0\refint\Axian_BC.dll
 E:\Axian\Axian_BC\obj\Debug\net8.0\Axian_BC.pdb
@@ -37,3 +36,10 @@ E:\Axian\Axian_BC\obj\Debug\net8.0\scopedcss\Components\Pages\Avisos.razor.rz.sc
 E:\Axian\Axian_BC\obj\Debug\net8.0\scopedcss\Components\Layout\SideMenu.razor.rz.scp.css
 E:\Axian\Axian_BC\obj\Debug\net8.0\scopedcss\Components\Layout\LeftContent.razor.rz.scp.css
 E:\Axian\Axian_BC\obj\Debug\net8.0\scopedcss\Components\Layout\ProfileInfo.razor.rz.scp.css
+E:\Axian\Axian_BC\bin\Debug\net8.0\build\web.config
+E:\Axian\Axian_BC\bin\Debug\net8.0\build\appsettings.Development.json
+E:\Axian\Axian_BC\bin\Debug\net8.0\build\appsettings.json
+E:\Axian\Axian_BC\bin\Debug\net8.0\build\Axian_BC.deps.json
+E:\Axian\Axian_BC\bin\Debug\net8.0\build\Axian_BC.runtimeconfig.json
+E:\Axian\Axian_BC\bin\Debug\net8.0\build\Axian_BC.staticwebassets.endpoints.json
+E:\Axian\Axian_BC\obj\Debug\net8.0\Axian_BC.sourcelink.json

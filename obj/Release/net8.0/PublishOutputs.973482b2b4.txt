@@ -1,0 +1,7 @@
+E:\Axian\Axian_BC\obj\Release\net8.0\PubTmp\Out\Axian_BC.exe
+E:\Axian\Axian_BC\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+E:\Axian\Axian_BC\obj\Release\net8.0\PubTmp\Out\appsettings.json
+E:\Axian\Axian_BC\obj\Release\net8.0\PubTmp\Out\Axian_BC.dll
+E:\Axian\Axian_BC\obj\Release\net8.0\PubTmp\Out\Axian_BC.deps.json
+E:\Axian\Axian_BC\obj\Release\net8.0\PubTmp\Out\Axian_BC.runtimeconfig.json
+E:\Axian\Axian_BC\obj\Release\net8.0\PubTmp\Out\Axian_BC.pdb

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Axian_BC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d2c7dcb3e60e7137c37de25191b07b0b780f5c7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Axian_BC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Axian_BC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

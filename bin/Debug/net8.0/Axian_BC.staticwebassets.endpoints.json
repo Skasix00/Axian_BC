@@ -3,51 +3,6 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
-      "Route": "Axian_BC.638s9hmyvg.styles.css",
-      "AssetFile": "Axian_BC.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "10920"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8oS+XJfuXpcDWZjzuX2/bV6nY7gk2rbRD9SctiWUzV8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 16 Dec 2024 19:01:22 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "638s9hmyvg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-8oS+XJfuXpcDWZjzuX2/bV6nY7gk2rbRD9SctiWUzV8="
-        },
-        {
-          "Name": "label",
-          "Value": "Axian_BC.styles.css"
-        }
-      ]
-    },
-    {
       "Route": "Axian_BC.styles.css",
       "AssetFile": "Axian_BC.styles.css",
       "Selectors": [],
@@ -62,7 +17,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10920"
+          "Value": "11024"
         },
         {
           "Name": "Content-Type",
@@ -70,17 +25,62 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8oS+XJfuXpcDWZjzuX2/bV6nY7gk2rbRD9SctiWUzV8=\""
+          "Value": "\"8Mt5OcwEdblrVVV40393WO9/95i1IeiZJH7PfvYJgF0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 16 Dec 2024 19:01:22 GMT"
+          "Value": "Mon, 16 Dec 2024 19:26:49 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8oS+XJfuXpcDWZjzuX2/bV6nY7gk2rbRD9SctiWUzV8="
+          "Value": "sha256-8Mt5OcwEdblrVVV40393WO9/95i1IeiZJH7PfvYJgF0="
+        }
+      ]
+    },
+    {
+      "Route": "Axian_BC.w4ort33fcs.styles.css",
+      "AssetFile": "Axian_BC.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8Mt5OcwEdblrVVV40393WO9/95i1IeiZJH7PfvYJgF0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 19:26:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w4ort33fcs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8Mt5OcwEdblrVVV40393WO9/95i1IeiZJH7PfvYJgF0="
+        },
+        {
+          "Name": "label",
+          "Value": "Axian_BC.styles.css"
         }
       ]
     },
